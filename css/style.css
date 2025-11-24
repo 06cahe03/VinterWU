@@ -1,0 +1,61 @@
+/*
+    Kunden har alltid rätt "HealthHub"
+    Copyright (c) 2025 Carl H.L
+    All Rights Reserved
+*/
+
+:root {
+    --accent: #9b59b6;
+    --background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 5rem 1fr;
+    row-gap: 1rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 2rem 1fr 2rem;
+}
+
+nav {
+    background-color: var(--accent);
+    border-radius: 0px 0px 2rem 2rem;
+}
+
+/* very nice inverse border radius solution */
+.header-dummy {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--accent);
+}
+.header-dummy::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+}
+.header-dummy:first-child::after {
+    border-radius: 0px 2rem 0px 0px;
+}
+.header-dummy:last-child::after {
+    border-radius: 2rem 0px 0px 0px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr max(20rem, 20%);
+    column-gap: 1rem;
+    margin: 0px 2rem 0px 2rem;
+}
+
+aside {
+    position: sticky;
+    top: 0px;
+    max-height: 100vh;
+}
