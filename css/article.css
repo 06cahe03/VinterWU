@@ -1,6 +1,6 @@
 /*
     Kunden har alltid rätt "HealthHub"
-    Copyright (c) 2025 Carl H.L
+    Copyright (c) 2026 Carl H.L
     All Rights Reserved
 */
 
@@ -18,4 +18,11 @@ article {
 article img {
     width: 100%;
     border-radius: 1rem;
+}
+.img-credit a {
+    color: var(--text-darker);
+}
+
+aside ul {
+    list-style-type: "> ";
 }

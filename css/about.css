@@ -1,19 +1,19 @@
 /*
     Kunden har alltid rätt "HealthHub"
-    Copyright (c) 2025 Carl H.L
+    Copyright (c) 2026 Carl H.L
     All Rights Reserved
 */
 
 @import url("style.css");
 
 main {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 article {
     width: 100%;
     max-width: 50rem;
-    margin: auto;
     background-color: var(--background-darker);
     padding: 1rem 2rem;
     border-radius: 2rem;

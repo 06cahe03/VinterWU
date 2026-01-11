@@ -1,6 +1,6 @@
 /*
     Kunden har alltid rätt "HealthHub"
-    Copyright (c) 2025 Carl H.L
+    Copyright (c) 2026 Carl H.L
     All Rights Reserved
 */
 
@@ -8,6 +8,7 @@
     --background: #9b59b6;
     --background-darker: #633475;
     --text: #fff;
+    --text-darker: #ddd;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -75,8 +76,30 @@ main {
 
 aside {
     position: sticky;
-    top: 0px;
+    top: 1rem;
     max-height: 100vh;
+}
+aside div {
+    background-color: var(--background-darker);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+aside div > h3 {
+    margin: 0px;
+}
+aside ul {
+    margin: 0px;
+    padding-left: 1rem;
+}
+aside li {
+    margin-top: 0.5rem;
+}
+aside a {
+    color: var(--text-darker);
+    text-decoration: none;
+}
+aside a:hover {
+    text-decoration: underline;
 }
 
 /* global classes */
