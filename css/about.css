@@ -14,9 +14,17 @@ main {
 article {
     width: 100%;
     max-width: 50rem;
+    
+    
+    
+}
+
+article > div {
+    width: 100%;
     background-color: var(--background-darker);
     padding: 1rem 2rem;
     border-radius: 2rem;
+    box-sizing: border-box;
 }
 
 .employee-list {
@@ -29,7 +37,16 @@ article {
     text-align: center;
 }
 
+.employee-list li {
+    background-image: linear-gradient(
+        var(--accent) 7rem,
+        var(--background-darker) 7rem
+    );
+    border-radius: 2rem;
+    padding: 2rem 0px 1rem;
+}
+
 .employee-list img {
-    width: 100%;
+    width: 8rem;
     border-radius: 100%;
 }

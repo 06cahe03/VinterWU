@@ -84,8 +84,10 @@ aside div {
     padding: 2rem;
     border-radius: 2rem;
 }
-aside div > h3 {
+aside div > p {
     margin: 0px;
+    font-size: larger;
+    font-weight: bold;
 }
 aside ul {
     margin: 0px;
